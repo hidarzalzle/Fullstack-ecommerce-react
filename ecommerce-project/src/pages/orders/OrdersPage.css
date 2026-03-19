@@ -1,0 +1,146 @@
+.orders-page {
+  max-width: 1280px;
+  margin: 88px auto 100px;
+  padding: 0 24px;
+}
+
+.orders-page .page-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.orders-page .page-subtitle,
+.tracking-progress-caption,
+.timeline-card p {
+  color: #94a3b8;
+}
+
+.orders-page .orders-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 28px;
+  margin-top: 20px;
+}
+
+.orders-page .order-container,
+.orders-page .order-header,
+.orders-page .order-details-grid {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(8, 15, 30, 0.92));
+}
+
+.orders-page .order-container {
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.orders-page .order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.orders-page .order-header-left-section {
+  display: flex;
+  gap: 40px;
+}
+
+.orders-page .order-header-right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.orders-page .share-order-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 220px;
+  padding: 12px 16px;
+}
+
+.orders-page .share-order-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+}
+
+.orders-page .share-order-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.orders-page .order-header-label,
+.orders-page .product-name {
+  font-weight: 700;
+}
+
+.orders-page .order-details-grid {
+  padding: 28px;
+}
+
+.order-product-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 200px;
+  gap: 28px;
+  align-items: center;
+}
+
+.order-product-row + .order-product-row {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.orders-page .product-image-container img {
+  width: 100%;
+  max-width: 110px;
+  border-radius: 18px;
+}
+
+.orders-page .buy-again-button,
+.orders-page .track-package-button {
+  width: 100%;
+  padding: 12px 14px;
+}
+
+.orders-page .buy-again-button {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.orders-page .buy-again-icon {
+  width: 18px;
+}
+
+@media (max-width: 840px) {
+  .orders-page .order-header,
+  .orders-page .order-header-left-section,
+  .order-product-row {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .orders-page .order-header-left-section {
+    gap: 18px;
+  }
+
+  .orders-page .order-header-right-section {
+    align-items: flex-start;
+  }
+
+  .orders-page .share-order-button {
+    width: 100%;
+    min-width: 0;
+  }
+}

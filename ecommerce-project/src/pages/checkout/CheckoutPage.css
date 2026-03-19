@@ -1,0 +1,121 @@
+.checkout-page {
+  max-width: 1280px;
+  padding: 0 24px;
+  margin: 140px auto 100px;
+}
+
+.checkout-page .page-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.checkout-page .checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  column-gap: 18px;
+  align-items: start;
+}
+
+.checkout-page .cart-item-container,
+.checkout-page .payment-summary {
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 24px;
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(8, 15, 30, 0.92));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.checkout-page .cart-item-container {
+  margin-bottom: 14px;
+}
+
+.checkout-page .delivery-date,
+.checkout-page .total-row {
+  color: #67e8f9;
+}
+
+.checkout-page .delivery-date {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 22px;
+}
+
+.checkout-page .cart-item-details-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 22px;
+}
+
+.checkout-page .product-image {
+  max-width: 100%;
+  max-height: 120px;
+  border-radius: 18px;
+}
+
+.checkout-page .product-name,
+.checkout-page .delivery-options-title,
+.checkout-page .payment-summary-title {
+  font-weight: 700;
+}
+
+.checkout-page .product-price {
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.checkout-page .product-quantity .link-primary {
+  margin-left: 8px;
+}
+
+.checkout-page .delivery-option {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  margin-bottom: 14px;
+}
+
+.checkout-page .delivery-option-price {
+  color: #94a3b8;
+}
+
+.checkout-page .payment-summary-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 12px;
+}
+
+.checkout-page .payment-summary-money {
+  text-align: right;
+}
+
+.checkout-page .subtotal-row .payment-summary-money,
+.checkout-page .total-row {
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.checkout-page .subtotal-row div,
+.checkout-page .total-row {
+  padding-top: 12px;
+}
+
+.checkout-page .total-row {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.checkout-page .place-order-button {
+  width: 100%;
+  padding: 14px;
+  margin: 20px 0 4px;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .checkout-grid,
+  .checkout-page .cart-item-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-page .payment-summary {
+    margin-bottom: 14px;
+  }
+}

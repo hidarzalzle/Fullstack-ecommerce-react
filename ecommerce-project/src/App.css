@@ -1,0 +1,177 @@
+.favorites-page,
+.tracking-page {
+  margin-top: 88px;
+  padding: 24px;
+}
+
+.favorites-hero,
+.tracking-shell,
+.empty-state-card,
+.not-found-state {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+}
+
+.favorites-hero,
+.tracking-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 320px);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.favorites-count-card,
+.empty-state-card,
+.tracking-product-card,
+.tracking-progress-card,
+.timeline-card,
+.order-highlight-card {
+  border: 1px solid var(--border-muted);
+  background: var(--surface-soft);
+  border-radius: 24px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.28);
+}
+
+.favorites-count-card,
+.order-highlight-card {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.favorites-count-card strong,
+.order-highlight-card strong {
+  font-size: 2.75rem;
+}
+
+.empty-state-card {
+  padding: 32px;
+  text-align: center;
+}
+
+.inline-action {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 12px 18px;
+  margin-top: 12px;
+}
+
+.tracking-product-card {
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+  padding: 24px;
+}
+
+.tracking-product-card img {
+  max-width: 100%;
+  max-height: 220px;
+}
+
+.tracking-progress-card {
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.tracking-admin-panel {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--border-muted);
+  background: var(--panel-overlay);
+  border-radius: 20px;
+}
+
+.tracking-admin-panel label {
+  display: grid;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.tracking-admin-panel select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border-muted);
+  appearance: none;
+  background: var(--select-field-bg);
+  color: var(--text-primary);
+}
+
+.tracking-admin-panel select option {
+  background: var(--select-option-bg);
+  color: var(--select-option-text);
+}
+
+.tracking-admin-panel p {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+}
+
+.timeline-card.active {
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 25px 80px rgba(34, 211, 238, 0.12);
+}
+
+.tracking-progress-header,
+.page-heading-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.tracking-progress-bar {
+  height: 14px;
+  margin: 14px 0 10px;
+  border-radius: 999px;
+  background: rgba(51, 65, 85, 0.2);
+  overflow: hidden;
+}
+
+.tracking-progress-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #22d3ee, #8b5cf6 60%, #f472b6);
+}
+
+.tracking-timeline {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.timeline-card {
+  padding: 24px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(100, 116, 139, 0.8);
+  box-shadow: 0 0 0 8px rgba(100, 116, 139, 0.14);
+}
+
+.timeline-card.done .timeline-dot {
+  background: #22d3ee;
+  box-shadow: 0 0 0 8px rgba(34, 211, 238, 0.14);
+}
+
+@media (max-width: 960px) {
+  .favorites-hero,
+  .tracking-shell,
+  .page-heading-row,
+  .tracking-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .page-heading-row {
+    display: grid;
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409 60" role="img" aria-label="Northstar Market logo">
+  <rect width="409" height="60" rx="10" fill="#123456"/>
+  <rect x="8" y="8" width="40" height="44" rx="8" fill="none" stroke="#f5a742" stroke-width="4"/>
+  <path d="M18 42V18h6l10 14V18h6v24h-6L24 28v14z" fill="#f5a742"/>
+  <text x="62" y="26" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.8" fill="#f5a742">NORTHSTAR</text>
+  <text x="62" y="46" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2.7" fill="#ffffff">MARKET</text>
+  <path d="M386 10l2.2 6.9h7.3l-5.9 4.3 2.3 6.8-5.9-4.2-5.8 4.2 2.2-6.8-5.8-4.3h7.2z" fill="#fff4cf"/>
+</svg>

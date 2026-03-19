@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 60" role="img" aria-label="Northstar Market mobile logo">
+  <rect width="52" height="60" rx="10" fill="#123456"/>
+  <rect x="8" y="8" width="36" height="44" rx="8" fill="none" stroke="#f5a742" stroke-width="4"/>
+  <path d="M17 42V18h6l12 16V18h6v24h-6L23 26v16z" fill="#f5a742"/>
+  <path d="M41 10l1.5 4.6h4.9l-4 2.9 1.5 4.6-4-2.9-4 2.9 1.5-4.6-4-2.9h4.9z" fill="#fff4cf"/>
+</svg>

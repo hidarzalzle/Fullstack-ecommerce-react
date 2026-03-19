@@ -1,0 +1,242 @@
+.home-page {
+  margin-top: 72px;
+  padding: 24px;
+}
+
+.home-page .hero-panel {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  padding: 32px;
+  border-radius: 28px;
+  border: 1px solid var(--border-muted);
+  background:
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.15), transparent 24%),
+    var(--surface-soft);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.home-page .hero-panel h1 {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  max-width: 12ch;
+  margin-bottom: 12px;
+}
+
+.home-page .hero-panel p,
+.pagination-bar p {
+  color: var(--text-muted);
+}
+
+.home-page .hero-stats-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home-page .hero-stat-card,
+.home-page .product-container,
+.pagination-bar {
+  border: 1px solid var(--border-muted);
+  background: var(--surface-soft);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.home-page .hero-stat-card {
+  border-radius: 22px;
+  padding: 22px;
+  display: grid;
+  gap: 8px;
+}
+
+.home-page .hero-stat-card strong {
+  font-size: 2rem;
+}
+
+.products-grid-section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.home-page .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.home-page .product-container {
+  padding: 24px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border-soft);
+  background: var(--surface-strong);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.favorite-button.active {
+  background: rgba(236, 72, 153, 0.18);
+  color: #f472b6;
+  border-color: rgba(244, 114, 182, 0.32);
+}
+
+.home-page .product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.home-page .product-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 18px;
+}
+
+.home-page .product-name {
+  min-height: 48px;
+  margin-bottom: 8px;
+}
+
+.home-page .product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.home-page .product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.home-page .product-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.home-page .product-quantity-container {
+  margin-bottom: 18px;
+}
+
+.home-page .product-spacer {
+  flex: 1;
+}
+
+.home-page .added-to-cart {
+  color: #67e8f9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.home-page .added-to-cart.visible {
+  opacity: 1;
+}
+
+.home-page .added-to-cart img {
+  height: 18px;
+}
+
+.home-page .add-to-cart-button {
+  width: 100%;
+  padding: 12px;
+}
+
+.pagination-bar {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.pagination-page-indicator {
+  min-width: 100px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .home-page {
+    padding: 16px;
+  }
+
+  .home-page .hero-stats-grid,
+  .pagination-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination-bar {
+    display: grid;
+  }
+
+  .pagination-controls {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+
+.home-page .admin-callout-panel {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid var(--border-muted);
+  background: var(--surface-soft);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.home-page .admin-panel-copy p {
+  color: var(--text-muted);
+}
+
+.home-page .admin-callout-action {
+  text-decoration: none;
+  padding: 14px 18px;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .home-page .admin-callout-panel {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-page .admin-callout-action {
+    width: 100%;
+    justify-content: center;
+  }
+}
